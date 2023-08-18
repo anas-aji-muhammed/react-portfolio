@@ -1,0 +1,21 @@
+.navbarContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px 0 100px;
+    /*background-color: aliceblue;*/
+    align-items: center;
+    box-shadow: 1px 2px lightblue;
+
+}
+
+.navbarLinks{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+
+}
+
+.navbarLinks a{
+    font-size: medium;
+    font-weight: bold;
+}

@@ -1,0 +1,68 @@
+.imageRow{
+    display: flex;
+    align-items: center;
+    /*margin: 100px 200px 0 200px;*/
+    justify-content: center; /* Aligns items horizontally in the center */
+    width: 1000px;
+    margin: 80px auto auto;
+}
+.textContent{
+    width: 600px;
+    text-align: justify-all;
+    margin-right: auto;
+}
+.textContent h1{
+    font-weight: bold;
+    font-size: xxx-large;
+}
+.textContent p{
+    font-size: large;
+}
+.socialLogos{
+    display: flex;
+    justify-content: space-evenly;
+}
+.socialLogos img{
+    height: 40px;
+    width: 40px;
+}
+
+.techStackImages{
+    height: 40px;
+    width: 40px;
+}
+
+.techTackContained{
+    width: 600px;
+}
+
+.sliderContainer {
+    width: 600px;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+
+.sliderContent {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrolling 60s linear infinite;
+}
+
+.sliderContent:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.sliderItem {
+    display: inline-block;
+    margin-right: 20px; /* Adjust spacing between icons */
+}
