@@ -1,68 +1,73 @@
+.homeSection{
+    height: 100vh;
+    width: 100%;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
 .imageRow{
     display: flex;
+    width: 70vw;
+    flex-direction: row;
     align-items: center;
-    /*margin: 100px 200px 0 200px;*/
-    justify-content: center; /* Aligns items horizontally in the center */
-    width: 1000px;
-    margin: 80px auto auto;
+    justify-content: center;
 }
 .textContent{
-    width: 600px;
+    width: 60%;
     text-align: justify-all;
     margin-right: auto;
-}
-.textContent h1{
-    font-weight: bold;
-    font-size: xxx-large;
-}
-.textContent p{
-    font-size: large;
+    h1{
+        font-weight: bold;
+        font-size: xxx-large;
+        margin: 0;
+    }
+
+    p{
+        font-size: large;
+    }
 }
 .socialLogos{
     display: flex;
     justify-content: space-evenly;
-}
-.socialLogos img{
-    height: 40px;
-    width: 40px;
+
+    img{
+        height: 40px;
+        width: 40px;
+    }
 }
 
 .techStackImages{
     height: 40px;
     width: 40px;
+    padding: 0 20px 0 40px;
 }
 
-.techTackContained{
-    width: 600px;
-}
-
-.sliderContainer {
-    width: 600px;
+.techTackContainer{
+    padding-top: 20px;
+    width: 1000px;
+    height: 50px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
     overflow: hidden;
-    position: relative;
+
+}
+
+.techStackTitle {
+    font-size: large;
+    font-weight: bold;
+}
+
+.sliderContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
     white-space: nowrap;
+
 }
 
-.sliderContent {
-    display: inline-block;
-    white-space: nowrap;
-    animation: scrolling 60s linear infinite;
-}
 
-.sliderContent:hover {
-    animation-play-state: paused;
-}
-
-@keyframes scrolling {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-.sliderItem {
-    display: inline-block;
-    margin-right: 20px; /* Adjust spacing between icons */
-}

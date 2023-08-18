@@ -4,7 +4,7 @@ import {socialIcons} from "../../images/social/socialImages";
 
 function Contact(props) {
     return (
-        <section className={styles.contactSection}>
+        <section className={styles.contactSection} id="contact">
             <div className={styles.contactContainer}>
                 <h2>
                     CONTACT

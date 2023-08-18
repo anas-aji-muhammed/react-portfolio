@@ -1,0 +1,40 @@
+.aboutSection{
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.rowContent{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 70vw;
+}
+.aboutImage{
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+}
+
+
+.aboutMeContent{
+  align-items: start;
+  text-align: left;
+  padding-left: 50px;
+  justify-content: space-between;
+
+
+  p{
+    text-align: justify;
+  }
+  h2{
+    color: #147efb;
+  }
+  h1{
+
+  }
+}
