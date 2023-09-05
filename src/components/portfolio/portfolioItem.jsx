@@ -2,28 +2,32 @@ import React from 'react';
 import styles from './Portfolio.module.scss'
 import {socialIcons} from '../../images/social/socialImages'
 import {techStackIcons} from '../../images/tech-stack-icons/techStackIcons'
+import {onClickOpenInNewTabHandler} from '../../utils/helperFunctions'
 
 function PortfolioItem(props) {
     const project = props.project;
     const isEven = project.orderNumber % 2 === 0;
     const hasCode = project.hasCode;
-    
-    function onClickHandler(event, url){
-        event.preventDefault();
-        if (url) {
-            window.open(url, '_blank');
-          }
-
-    }
 
     return (
         (isEven)? <div className={styles.portfolioItemContainer} >
                 <div className={styles.portfolioItemContent}>
-                    <img src="https://picsum.photos/200/300" alt="profilePic" className={styles.portfolioItemImageContainer}/>
+                    {
+                        project.hasCoverImage?
+                    <div className={styles.portfolioItemImageContainer}>
+                        {project.coverImages.map((coverImage, index)=>(
+                                <div>
+                                    <img className={styles.portfolioItemImageItem} key={index} src={coverImage} alt="coverImage" />
+                                </div>
+                            ))}
+                    </div>
+                    :<div></div>
+                    }
 
                     <div className={styles.portfolioItemDetails}>
                         <h3>{project.projectName}</h3>
                         <p>{project.description}</p>
+                        <p style={{"color":"black"}}>Developer With</p>
                         <div className={styles.techStackUsed}>
                             {project.techStack.map((tech, index)=>(
                                 <div>
@@ -35,13 +39,13 @@ function PortfolioItem(props) {
                         <div className={styles.demoLinks}>
                             {
                             (hasCode)?
-                            <div onClick={(event=>onClickHandler(event, project.codeRepo))}>
+                            <div onClick={(event=>onClickOpenInNewTabHandler(event, project.codeRepo))}>
                                 <h3>Code</h3>
                                 <img src={socialIcons.githubIcon} alt="githubIcon"/>
 
                             </div>:<div></div>
                             }
-                            <div>
+                            <div onClick={(event=>onClickOpenInNewTabHandler(event, project.liveURL))}>
                                 <h3>Demo</h3>
                                 <img src={socialIcons.linkIcon} alt="linkIcon" />
                             </div>
@@ -70,20 +74,31 @@ function PortfolioItem(props) {
                         <div className={styles.demoLinks}>
                             {
                             (hasCode)?
-                            <div onClick={(event=>onClickHandler(event, project.codeRepo))}>
+                            <div onClick={(event=>onClickOpenInNewTabHandler(event, project.codeRepo))}>
                                 <h3>Code</h3>
                                 <img src={socialIcons.githubIcon} alt="githubIcon"/>
 
                             </div>:<div></div>
                             }
-                            <div onClick={(event=>onClickHandler(event, project.liveURL))}>
+                            <div onClick={(event=>onClickOpenInNewTabHandler(event, project.liveURL))}>
                                 <h3>Demo</h3>
                                 <img src={socialIcons.linkIcon} alt="linkIcon" />
                             </div>
 
                         </div>
                     </div>
-                    <img src="https://picsum.photos/200/300" alt="profilePic" className={styles.portfolioItemImageContainer}/>
+                    {
+                        project.hasCoverImage?
+                    <div className={styles.portfolioItemImageContainer}>
+                        {project.coverImages.map((coverImage, index)=>(
+                                <div>
+                                    <img className={styles.portfolioItemImageItem} key={index} src={coverImage} alt="coverImage" />
+                                </div>
+                            ))}
+                    </div>
+                    :<div></div>
+                    }
+
 
                 </div>
 

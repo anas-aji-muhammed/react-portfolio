@@ -6,6 +6,27 @@
     align-items: center;
     justify-content: center;
 }
+.tabBarContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.tabBarItem{
+    font-size: 30px;
+    font-weight: 600;
+    padding: 5px;
+    
+}
+.tabBarItemActive{
+    font-size: 30px;
+    font-weight: 600;
+    padding: 5px;
+    border-bottom: #147efb 2px solid;;
+}
 .portfolioContent{
     width: 70vw;
     display: flex;
@@ -19,7 +40,7 @@
     h1{
         color: #2d2e32;
         font-size: 2rem;
-        margin-bottom: 6rem;
+        margin-bottom: 3rem;
     }
 }
 
@@ -36,15 +57,32 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 5px;
     height: 100%;
+    width: 100%;
     padding: 0 10px 0 10px;
+    margin: 0;
 }
 
 .portfolioItemImageContainer{
-    height: 90%;
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
     width: 100%;
+    height: 60vh;
     border-radius: 6px;
+    // gap: 5px;
+    overflow: hidden;
+}
 
+.portfolioItemImageItem{
+    height: 100%;
+    object-fit: contain;
+    overflow: clip;
+
+    img{
+        flex: 1 0 100%;
+    }
 }
 .portfolioItemDetails{
     display: flex;
@@ -71,7 +109,7 @@
     }
 
     h2{
-        color:black;
+        color: rgb(56, 49, 80);
     }
 }
 

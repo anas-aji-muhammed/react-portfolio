@@ -4,7 +4,7 @@ import {SiFlutter, SiDart, SiIos, SiFirebase, SiKotlin} from 'react-icons/si'
 import {projectImages} from '../../images/projects/projectImages'
 
 const specsShopperProject = {
-    "projectName": "Specshopper",
+    "projectName": "Specshoppereeee",
     "description": "Designed and developed critical portions of Specshopper eyewear shopping app. Developed with Flutter for IOS and Android.",
     "hasCode": false,
     "liveURL": "https://play.google.com/store/apps/details?id=com.seeroo.specshopper",
@@ -70,7 +70,7 @@ const unidocProject = {
 
 }
 
-export const mobileProjects = [
+export const webProjects = [
     unidocProject,
     instaMeatProject,
     specsShopperProject
