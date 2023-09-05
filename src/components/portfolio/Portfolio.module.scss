@@ -64,11 +64,17 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 80%;
     img{
         height: 30px;
         width: 30px;
     }
+
+    h2{
+        color:black;
+    }
 }
+
 .demoLinks{
     display: flex;
     flex-direction: row;
@@ -79,6 +85,8 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
+
     }
     img{
         padding: 0 5px 0 5px;
@@ -86,3 +94,6 @@
         width: 25px;
     }
 }
+
+
+
