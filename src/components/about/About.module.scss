@@ -38,3 +38,44 @@
 
   }
 }
+
+@media only screen and  (max-width: 1000px){
+  .rowContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    text-align: justify;
+
+  }
+
+  .aboutMeContent{
+    align-items: center;
+    // text-align: left;
+    // padding-left: 50px;
+    justify-content: space-between;
+    padding: 0;
+    width: 90%;
+
+  
+    p{
+      text-align: center;
+      line-height: 1.6;
+      font-weight: 600;
+      color: #767676;
+    }
+    h2{
+      color: #147efb;
+    }
+    h1{
+  
+    }
+  }
+
+  .aboutImage{
+    border-radius: 5px;
+    width: 90vw;
+    height: 25vh;
+  }
+}

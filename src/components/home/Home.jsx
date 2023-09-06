@@ -1,31 +1,38 @@
 import React from 'react';
 import styles from './Home.module.scss'
 import {socialIcons} from '../../images/social/socialImages'
-import {techStackIcons} from '../../images/tech-stack-icons/techStackIcons'
-import { Carousel } from 'react-responsive-carousel';
-import { generalImages } from '../../images/general/generalImages'
 import {FaHackerrank, FaStar} from 'react-icons/fa6'
 import {SiLeetcode} from 'react-icons/si'
+import {onClickOpenInNewTabHandler} from '../../utils/helperFunctions'
 
 
 function Home(props) {
     return (
         <section className={styles.homeSection} id="home">
-        <div>
+        <div> 
             <div className={styles.imageRow}>
                 <div className={styles.textContent}>
                     <h1>Software Engineer  👋</h1>
                     <p>Hi. I am Anas. A passionate software engineer based in London,UK </p>
                     <div className={styles.socialLogos}>
-                        <img src={socialIcons.githubIcon} alt='githubIcon'/>
-                        <img src={socialIcons.linkedInIcon} alt='linkedInIcon'/>
-                        <img src={socialIcons.stackOverflow} alt='stackOverflow'/>
-                        <img src={socialIcons.medium} alt='medium'/>
+                        <img src={socialIcons.githubIcon} alt='githubIcon'
+                            onClick={(event=>onClickOpenInNewTabHandler(event, 'github'))}
+                        />
+                        <img src={socialIcons.linkedInIcon} alt='linkedInIcon'
+                             onClick={(event=>onClickOpenInNewTabHandler(event, 'linkedin'))}
+                        />
+                        <img src={socialIcons.stackOverflow} alt='stackOverflow'
+                             onClick={(event=>onClickOpenInNewTabHandler(event, 'stackoverflow'))}
+                        />
+                        <img src={socialIcons.medium} alt='medium'
+                             onClick={(event=>onClickOpenInNewTabHandler(event, 'medium'))}
+                        />
                     
-
                     </div>
                     <div className={styles.codingProfileContainer}>
-                        <diV className={styles.codingProfile}>
+                        <diV className={styles.codingProfile}
+                        onClick={(event=>onClickOpenInNewTabHandler(event, "hackerrank"))}
+                        >
                         <div className={styles.rating}>
                             <h1 className={styles.ratingTech}>Java</h1>
                             <div>
@@ -39,8 +46,10 @@ function Home(props) {
                     </diV>
                     </div>
                 </div>
-                <div>
-                    <img src="https://picsum.photos/200/300" alt="profilePic" id={styles.profilePic}/>
+                <div className={styles.profilePic}>
+                    <img src="https://picsum.photos/200/300" alt="profilePic" 
+                        // id={styles.profilePic}
+                    />
 
                 </div>
 

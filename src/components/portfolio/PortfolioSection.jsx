@@ -20,7 +20,7 @@ function PortfolioSection(props) {
             activeProjectCategoryChange(webProjects)
         }
     }
-
+ 
     return (
         <section className={styles.portfolioSection} id="project">
             <div className={styles.portfolioContent}>

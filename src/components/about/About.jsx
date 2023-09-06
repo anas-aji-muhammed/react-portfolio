@@ -15,7 +15,7 @@ function About(props) {
 
                         As a seasoned developer, my expertise extends to working on innovative projects involving Convolutional Neural Networks (CNN) and data science. I excel in designing, building, and maintaining responsive and dynamic applications that provide an exceptional user experience. My passion for technology drives me to explore cutting-edge tools and methodologies, ensuring that the products I deliver are always at the forefront of innovation.
 
-                        I pride myself on being a tech enthusiast who thrives on challenges and collaboration. </p>
+                        I pride myself on being a tech enthusiast who thrives on challenges and collaboration. </p> 
                 </div>
             </div>
         </section>
