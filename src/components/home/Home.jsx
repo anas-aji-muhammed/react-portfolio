@@ -4,6 +4,8 @@ import {socialIcons} from '../../images/social/socialImages'
 import {FaHackerrank, FaStar} from 'react-icons/fa6'
 import {SiLeetcode} from 'react-icons/si'
 import {onClickOpenInNewTabHandler} from '../../utils/helperFunctions'
+import { generalImages } from '../../images/general/generalImages'
+import {techStackIcons} from '../../images/tech-stack-icons/techStackIcons'
 
 
 function Home(props) {
@@ -47,7 +49,8 @@ function Home(props) {
                     </div>
                 </div>
                 <div className={styles.profilePic}>
-                    <img src="https://picsum.photos/200/300" alt="profilePic" 
+                    <img 
+                    src={generalImages.portfolioImage} alt="profilePic" 
                         // id={styles.profilePic}
                     />
 
@@ -64,18 +67,7 @@ function Home(props) {
                 <img src={generalImages.bubble} alt="bubble" />
                 </div> */}
         </div>
-        {/* <div className={styles.techTackContainer}>
-                <div className={styles.techStackTitle}>Tech stacks</div>
-                <div className={styles.sliderContainer}>
-                    {Object.values(techStackIcons).map((icon, index) => (
-                        <div key={index}>
-                            <img src={icon} alt="Tech Icon"  className={styles.techStackImages} />
-                        </div>
-                    ))}
-                </div>
-                <p >Unlocking Infinite Possibilities with Every Line of Code: Explore My Diverse Tech Universe</p>
 
-            </div> */}
         </section>
     );
 }

@@ -6,10 +6,10 @@ function Footer(props) {
     return (
         <footer >
             <h3>Developed with React</h3>
-            <p>Design inspired from </p>
+            {/* <p>Design inspired from </p>
             <p
             onClick={(event=>onClickOpenInNewTabHandler(event, 'https://stefantopalovicdev.vercel.app/#projects'))}>
-            Stefan.dev</p>
+            Stefan.dev</p> */}
         </footer>
     );
 }

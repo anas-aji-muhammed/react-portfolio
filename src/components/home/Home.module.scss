@@ -33,8 +33,11 @@
         font-size: large;
     }
 }
-#profilePic{
-    height: 40vh;
+.profilePic{
+    img{
+        height: 40vh;
+        width: 22vw;
+    }
 }
 .socialLogos{
     display: flex;

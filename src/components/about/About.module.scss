@@ -39,7 +39,40 @@
   }
 }
 
+.techTackContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  // width: 70vw;
+
+  h2{
+    color: #000;
+    margin-left: 0;
+  }
+
+  .sliderContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 70vw;
+  }
+
+  .techStackImages{
+    height: 50px;
+    width: 50px;
+    padding: 0 0 0 20px;
+}
+}
+
 @media only screen and  (max-width: 1000px){
+  .aboutSection{
+    height: fit-content;
+
+  }
   .rowContent{
     display: flex;
     flex-direction: column;
@@ -78,4 +111,36 @@
     width: 90vw;
     height: 25vh;
   }
+
+  .techTackContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: center;
+  
+    // width: 70vw;
+  
+    h2{
+      color: #000;
+      margin-left: 0;
+    }
+  
+    .sliderContainer{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; 
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .techStackImages{
+      height: 50px;
+      width: 50px;
+      padding: 0 0 0 20px;
+  }
+  }
 }
+
+

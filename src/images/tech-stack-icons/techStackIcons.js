@@ -9,18 +9,26 @@ import kotlinIcon from './kotlin.png'
 import postgresqlIcon from './postgresql.png'
 import pythonIcon from './python.png'
 import reactIcon from './react.png'
+import springboot from './springboot.png'
+import express from './express.png'
+import mongodb from './mongodb.png'
+import nodejs from './nodejs.png'
+import tensorflow from './tensorflow.png'
 
 
 export const techStackIcons = {
+    javaIcon,
+    kotlinIcon,
+    reactIcon,
+    springboot,
+    nodejs,
+    postgresqlIcon,
+    mongodb,
+    flutterIcon,
     androidIcon,
-    androidStudioIcon,
+    javascriptIcon,
     dartIcon,
     firebaseIcon,
-    flutterIcon,
-    javaIcon,
-    javascriptIcon,
-    kotlinIcon,
-    postgresqlIcon,
+    androidStudioIcon,
     pythonIcon,
-    reactIcon,
 };
