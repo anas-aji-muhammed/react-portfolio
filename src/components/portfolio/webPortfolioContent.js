@@ -7,7 +7,7 @@ const blogAppProject = {
     "projectName": "My Blog App",
     "description": "Designed and developed blogging app with MERN stack, JWT, Firebase storage as blob and React quill.",
     "hasCode": true,
-    "liveURL": "",
+    "liveURL": "https://blog-app-mern-three.vercel.app/",
     "codeRepo":"https://github.com/anas-aji-muhammed/blog-app-mern/tree/main",
     "orderNumber" : 1,
     "techStack": [
